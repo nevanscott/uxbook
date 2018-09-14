@@ -17,3 +17,5 @@ title: UX Book
     by <span class="author">Nevan&nbsp;Scott</span>
   </div>
 </div>
+
+This is a work in progress, and should be considered highly unstable.
