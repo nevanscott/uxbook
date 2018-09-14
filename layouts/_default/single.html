@@ -1,0 +1,16 @@
+{{ define "main" }}
+  <article>
+    <h1>{{ .Title }}</h1>
+
+    {{ .Content }}
+  </article>
+
+  <nav class="paging">
+    {{ with .NextInSection }}
+      <a class="previous" href="{{.Permalink}}">{{.Title}}</a>
+    {{ end }}
+    {{ with .PrevInSection }}
+      <a class="next" href="{{.Permalink}}">{{.Title}}</a>
+    {{ end }}
+  </nav>
+{{ end }}

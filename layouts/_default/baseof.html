@@ -1,0 +1,62 @@
+<title>{{ .Title }}</title>
+{{ $options := (dict "targetPath" "style.css" "outputStyle" "compact" "enableSourceMap" false) }}
+{{ $style := resources.Get "main.scss" | toCSS $options | postCSS }}
+<link rel="stylesheet" href="{{ $style.Permalink }}">
+
+<body>
+  {{ block "main" . }}
+  {{ end }}
+
+  {{ block "nav" . }}
+    <nav role="navigation">
+      {{ $current := . }}
+      <ul>
+        {{ range $.Site.Home.Pages.ByWeight }}
+          {{ if not .Section }}
+          <li>
+            <a href="{{ .RelPermalink }}" {{ if eq $current.Permalink .Permalink  }}aria-current="page"{{ end }}>
+              <span class="text">{{ .Title }}</span>
+            </a>
+          </li>
+          {{ end }}
+        {{ end }}
+        {{ range $.Site.Home.Sections }}
+          <li>
+            <h2>
+              <a href="{{ .RelPermalink }}" {{ if eq $current.Title .Title  }}aria-current="page"{{ end }}>
+                <span class="text">{{ .Title }}</span>
+              </a>
+            </h2>
+            <ul>
+              {{ range .Pages.ByWeight }}
+                <li>
+                  <a href="{{ .RelPermalink }}" {{ if eq $current.Permalink .Permalink  }}aria-current="page"{{ end }}>
+                    <span class="text">{{ .Title }}</span>
+                  </a>
+                </li>
+              {{ end }}
+              {{ range .Sections.ByWeight }}
+                <li>
+                  <h3>
+                    <a href="{{ .RelPermalink }}" {{ if eq $current.Title .Title  }}aria-current="page"{{ end }}>
+                      <span class="text">{{ .Title }}</span>
+                    </a>
+                  </h3>
+                  <ul>
+                    {{ range .Pages.ByWeight }}
+                      <li class="pattern">
+                        <a href="{{ .RelPermalink }}" {{ if eq $current.Title .Title  }}aria-current="page"{{ end }}>
+                          <span class="text">{{ .Title }}</span>
+                        </a>
+                      </li>
+                    {{ end }}
+                  </ul>
+                </li>
+              {{ end }}
+            </ul>
+          </li>
+        {{ end }}
+      </ul>
+    </nav>
+  {{ end }}
+</body>

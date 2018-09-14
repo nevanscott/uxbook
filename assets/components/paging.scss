@@ -1,0 +1,21 @@
+.paging {
+  border-bottom: solid 1px lightgrey;
+  border-top: solid 1px lightgrey;
+  display: flex;
+  font-family: $sans;
+  font-size: smaller;
+  font-weight: 600;
+  justify-content: space-between;
+  a {
+    display: block;
+    padding: 1em 0;
+  }
+}
+
+.previous::before {
+  content: '← ';
+}
+
+.next::after {
+  content: ' →';
+}

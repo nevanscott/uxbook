@@ -1,0 +1,8 @@
+$font-prefix: 'fonts/plex';
+@import '../node_modules/@ibm/plex/scss/ibm-plex.scss';
+@import 'source-serif-pro';
+
+$serif: 'IBM Plex Serif', 'Georgia', Times, serif;
+$serif: 'Source Serif Pro', 'Georgia', Times, serif;
+
+$sans: 'IBM Plex Sans', 'Helvetica Neue', Arial, sans-serif;

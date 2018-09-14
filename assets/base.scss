@@ -1,0 +1,68 @@
+body {
+  background: #fafafa;
+  font-family: $serif;
+  font-size: 1.3rem;
+  line-height: 1.45;
+  margin: 0 auto;
+  max-width: 85ch;
+  padding: 3em;
+  text-rendering: optimizeLegibility;
+  font-feature-settings: 'kern' 1;
+  font-feature-settings: 'liga' 1;
+}
+
+img {
+  max-width: 100%;
+}
+
+h1 {
+  font-size: 1.4em;
+  font-style: italic;
+  font-weight: 800;
+}
+h2 {
+  font-family: $sans;
+  font-size: 1em;
+  margin-top: 1.6em;
+}
+
+a {
+  color: inherit;
+  text-decoration-color: darkred;
+  &[aria-current=page] {
+    color: inherit;
+    font-weight: 600;
+  }
+  &:hover {
+    color: darkred;
+  }
+  nav & {
+    text-decoration: none;
+  }
+}
+
+article {
+  border-top: solid 3px black;
+  hyphens: auto;
+  margin: 0 2.5rem 0 12rem;
+}
+
+figure {
+  margin: 0;
+  &.full {
+    margin: 0 -2.5rem 0 -12rem;
+  }
+}
+
+hr {
+  border: none;
+  border-bottom: solid 1px lightgrey;
+}
+
+ul {
+  list-style: square;
+}
+
+dt {
+  font-weight: bold;
+}

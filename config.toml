@@ -1,0 +1,9 @@
+baseURL = ""
+languageCode = "en-us"
+title = "UX Book"
+sectionPagesMenu = "main"
+staticDir = [
+  "static",
+  # "node_modules/@ibm/plex",
+  # "node_modules/source-serif-pro"
+]

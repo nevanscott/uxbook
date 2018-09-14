@@ -1,0 +1,73 @@
+---
+title: UX Book
+---
+
+<div class="cover">
+  <span class="word ux">
+    <span class="letter u">U</span>
+    <span class="letter x">X</span>
+  </span>
+  <span class="word book">
+    <span class="letter book-1 b">B</span>
+    <span class="letter book-2 o">o</span>
+    <span class="letter book-3 o">o</span>
+    <span class="letter book-4 k">k</span>
+  </span>
+  <div class="byline">
+    by <span class="author">Nevan&nbsp;Scott</span>
+  </div>
+</div>
+
+<style>
+.cover {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+  grid-gap: 0.5em;
+  font-family: 'IBM Plex Sans', 'Helvetica Neue', Arial, sans-serif;
+  margin: 0 -2.5rem 2rem -12rem;
+}
+.word {
+  display: contents;
+}
+.letter {
+  background: black;
+  color: white;
+  font-size: 3em;
+  font-weight: 900;
+  padding: .5em 0;
+  text-align: center;
+  text-transform: uppercase;
+}
+.book .letter {
+  grid-row: 2;
+}
+.book-1 {
+  grid-column: 2;
+}
+.book-2 {
+  grid-column: 3;
+}
+.book-3 {
+  grid-column: 4;
+}
+.book-4 {
+  grid-column: 5;
+}
+.byline {
+  grid-row: 2;
+  grid-column: 1;
+  background: black;
+  color: white;
+  padding: 1em;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.author {
+  font-weight: bold;
+}
+.letter, .byline {
+  cursor: default;
+}
+</style>

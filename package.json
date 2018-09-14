@@ -1,0 +1,21 @@
+{
+  "name": "uxbook",
+  "version": "0.1.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "build": "node copyfonts.js && hugo",
+    "dev": "hugo server",
+    "static": "node copyfonts.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@ibm/plex": "^1.1.6",
+    "autoprefixer": "^9.1.3",
+    "cpx": "^1.5.0",
+    "postcss-cli": "^6.0.0",
+    "source-serif-pro": "git://github.com/adobe-fonts/source-serif-pro.git#release"
+  }
+}
