@@ -835,6 +835,28 @@ ul { list-style: square; }
 
 dt { font-weight: bold; }
 
+.cover { display: grid; grid-template-columns: repeat(5, 1fr); grid-template-rows: repeat(2, 1fr); grid-gap: 0.5em; font-family: 'IBM Plex Sans', 'Helvetica Neue', Arial, sans-serif; margin: 0 -2.5rem 2rem -12rem; }
+
+.cover .word { display: contents; }
+
+.cover .letter { background: black; color: #fcfcfc; font-size: 3em; font-weight: 900; padding: .5em 0; text-align: center; text-transform: uppercase; }
+
+.cover .book .letter { grid-row: 2; }
+
+.cover .book-1 { grid-column: 2; }
+
+.cover .book-2 { grid-column: 3; }
+
+.cover .book-3 { grid-column: 4; }
+
+.cover .book-4 { grid-column: 5; }
+
+.cover .byline { grid-row: 2; grid-column: 1; background: black; color: #fcfcfc; padding: 1em; font-family: 'IBM Plex Sans Condensed', 'Helvetica Neue', Arial, sans-serif; display: flex; flex-direction: column; justify-content: center; }
+
+.cover .author { font-weight: bold; }
+
+.cover .letter, .cover .byline { cursor: default; }
+
 .paging { border-bottom: solid 1px lightgrey; border-top: solid 1px lightgrey; display: flex; font-family: "IBM Plex Sans", "Helvetica Neue", Arial, sans-serif; font-size: smaller; font-weight: 600; justify-content: space-between; }
 
 .paging a { display: block; padding: 1em 0; }
