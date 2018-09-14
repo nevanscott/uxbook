@@ -5,10 +5,12 @@
     {{ .Content }}
   </article>
 
-  {{ with .PrevInSection }}
-    <a class="previous" href="{{.Permalink}}"> {{.Title}}</a>
-  {{ end }}
-  {{ with .NextInSection }}
-    <a class="next" href="{{.Permalink}}"> {{.Title}}</a>
-  {{ end }}
+  <nav class="paging">
+    {{ with .NextInSection }}
+      <a class="previous" href="{{.Permalink}}">{{.Title}}</a>
+    {{ end }}
+    {{ with .PrevInSection }}
+      <a class="next" href="{{.Permalink}}">{{.Title}}</a>
+    {{ end }}
+  </nav>
 {{ end }}
