@@ -7,6 +7,7 @@
     "build": "node copyfonts.js && hugo",
     "dev": "hugo server",
     "static": "node copyfonts.js",
+    "prepare": "netlify-build-fix.sh",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "",
