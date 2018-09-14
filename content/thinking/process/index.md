@@ -22,8 +22,7 @@ Define
     On the other hand, a clearly defined problem provides us with guidance on how to proceed, and something we can check back on as we work to help us stay focused. Once we’ve created something, it also gives us some criteria to determine whether we’ve achieved something purposeful.
 
 Ideate
-: Once we know something about whom we're designing for and defined some design goals we can
-brainstorm. The more clearly defined our goals and audience, the easier it will be to start imagining possible ways to approach the problems. This process should feel very exploratory, reserving judgement for later. We want to think "on paper"—getting ideas out of our heads and mouths, and onto paper and walls.
+: Once we know something about whom we're designing for and defined some design goals we can brainstorm. The more clearly defined our goals and audience, the easier it will be to start imagining possible ways to approach the problems. This process should feel very exploratory, reserving judgement for later. We want to think "on paper"—getting ideas out of our heads and mouths, and onto paper and walls.
 
 Prototype
 : Based on our potential ideas, we choose some to try out by making a simple version of it. If we make something cheap that simulates our ideas in a way that we can test, it will be easier to try out multiple approaches quickly. This is where design work comes alive in a tangible way.
